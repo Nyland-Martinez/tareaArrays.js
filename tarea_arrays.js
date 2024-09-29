@@ -38,8 +38,7 @@ function buscaPalabras(words, word) {
     if (index === -1) {
         return [];
     }
-    const wordsGreaterThanIndex = words.filter((w) => w.length > index);
-    return wordsGreaterThanIndex;
+    return words.filter((_, i) => i > index);
 }
 
 // 5. Matrices
